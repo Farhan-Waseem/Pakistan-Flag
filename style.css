@@ -1,0 +1,50 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.flag {
+  width: 500px;
+  height: 300px;
+  box-shadow: 10px 10px 20px #7a7979, -10px -10px 20px #ffffff;
+  background: linear-gradient(to right, white 20%, #00401a 20%);
+}
+
+.crescent-moon {
+  position: relative;
+  left: 45%;
+  top: 25%;
+  width: 150px; 
+  height: 150px;
+  background-color: white; 
+  border-radius: 50%; 
+}
+
+.crescent-moon::before {
+  content: "";
+  position: absolute;
+  bottom: 25px;
+  left: 20%;
+  width: 85%;
+  height: 85%;
+  background-color: #00401a; 
+  border-radius: 50%;
+}
+
+.star{
+  position: absolute;
+  top: -4%;
+  left: 65%;
+  font-size: 400%;
+  color: white;
+  transform: rotate(50deg);
+}
